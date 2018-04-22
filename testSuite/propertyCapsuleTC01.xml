@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1">
+	<listeners>
+		<listener class-name="com.ajackus.test.AjackusReporter"></listener>
+	</listeners>
+	<test name="ajacus">
+		<parameter name="url" value="https://dev.maps.propertycapsule.com/map" />
+		<parameter name="userName" value="Ratnesh Singh" />
+		<parameter name="userEmail" value="rahty8934@gmail.com" />
+		<parameter name="userPassword" value="Ranjish@2018" />
+		<classes>
+			<class name="com.ajackus.test.PropertyCapsuleTC01Test" />
+		</classes>
+	</test>
+</suite>

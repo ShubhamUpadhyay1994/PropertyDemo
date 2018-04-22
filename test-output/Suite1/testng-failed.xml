@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <parameter name="url" value="https://dev.maps.propertycapsule.com/map"/>
+  <listeners>
+    <listener class-name="com.ajackus.test.AjackusReporter"/>
+  </listeners>
+  <test name="ajacus">
+    <parameter name="url" value="https://dev.maps.propertycapsule.com/map"/>
+    <classes>
+      <class name="com.ajackus.test.PropertyCapsuleT02Test"/>
+    </classes>
+  </test> <!-- ajacus -->
+</suite> <!-- Failed suite [Suite1] -->
